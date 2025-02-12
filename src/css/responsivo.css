@@ -49,9 +49,9 @@
     .conteudo-principal{
         width: 90%;
     }
-    .container-imagem-principal img{
+    /* .container-imagem-principal img{
         content: url(../images/imagem-principal-03.jpg);
-    }
+    } */
 }
 
 @media(max-width: 540px){
@@ -60,6 +60,9 @@
     }
     .conteudo-principal{
         width: 90%;
+    }
+    .conteudo-principal h1{
+        text-align: center;
     }
     .container-botao{
         justify-content: center;
@@ -101,7 +104,8 @@
         justify-content: center;
         align-items: center;
     }
-
-
+    .container-profissionais-certificados h2{
+        text-align: center;
+    }
 }
 

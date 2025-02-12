@@ -1,29 +1,27 @@
 /*! Responsividade cabeçaho */
-@media (max-width: 768px){
-    .header-container{
-        justify-content: space-between;
-    }
-    .header .menu{
+
+@media (max-width: 900px){
+    .header-content .menu{
         display: block;
     }
-    .header nav ul{
+    .header-content nav ul{
         display: none;
     }
-    .header input:checked ~ ul{
+    .header-content input:checked ~ ul{
         display: block;
     }
-    .header nav{
+    .header-content nav{
         position: absolute;
-        top: 8px;
-        right: 10px;
+        right: 20px;
+        top: 77px;
         z-index: 1;
     }
-    .header nav ul{
+    .header-content nav ul{
         width: 200px;
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: #fff;
         padding: 20px;
     }
-    .header nav ul a{
+    .header-content nav ul a{
         text-align: center;
         padding: 20px;
         display: block;

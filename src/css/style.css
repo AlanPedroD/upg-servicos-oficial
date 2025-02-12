@@ -11,78 +11,110 @@
     /* font-family: "Poppins", serif; */
 }
 
-.header a{
-    text-decoration: none;
-    color: black;
-}
-
-.header ul{
-    list-style: none;
-}
-
-.header img{
-    max-width: 100%;
-}
 .container{
     width: 1160px;
     max-width: 100%;
     margin: 0 auto;
 }
 
-
 /*! Cabeçalho */
-header{
-    padding: 10px;
-}
-.header-container{
+.telefone{
     width: 1160px;
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: end; 
     margin: 0 auto;
 }
-.header-container .logo{
-    width: 190px;
-    height: 60px;
-}
-.header-container .logo img{
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 50;
 }
-
-
-.header nav ul{
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background: #e5e5e5;
+}
+.top-bar div {
+    display: flex;
+    align-items: center;
+}
+.top-bar svg {
+    width: 20px;
+    height: 20px;
+    color: #555;
+}
+.top-bar span {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #555;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 1160px;
+    margin: 0 auto;
+}
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.logo-box {
+    width: 92px;
+    height: 92px;
+    background: #7b1b1b;
+}
+.logo-text {
+    position: absolute;
+    left: 46px;
+    display: flex;
+    flex-direction: column;
+}
+.logo-text span:first-child {
+    font-size: 30px;
+    font-weight: bold;
+    color: #C04908;
+}
+.logo-text span:last-child {
+    font-size: 16px;
+    color: #D9963E;
+}
+nav ul {
+    list-style: none;
     display: flex;
     gap: 20px;
-    padding: 20px;
+    font-size: 18px;
 }
-.header nav ul li a{
-    font-size: 15px;
-    font-weight: 500;
-    /* padding: 10px 30px; */
-    border-radius: 50px;
-    transition: 0.4s;
-    color: #AB1736;
+nav a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s;
 }
-.header nav ul li a:hover{
-    color: #DAA9B0;
+nav a:hover {
+    color: #9D2042;
 }
 
-.header .menu{
+/*! Hamburguer */
+.header-content .menu{
     display: none;
     width: 60px;
     height: 60px;
     align-self: flex-end;
 }
 
-.header nav label{
+.header-content nav label{
     display: flex;
     flex-direction: column;
 }
 
-.header .hamburguer{
+.header-content .hamburguer{
     background-color: #000;
     position: relative;
     display: block;
@@ -92,8 +124,8 @@ header{
     left: 15px;
     transition: 0.5s ease-in-out;
 }
-.header .hamburguer:before,
-.header .hamburguer:after{
+.header-content .hamburguer:before,
+.header-content .hamburguer:after{
     background-color: #000;
     content: "";
     display: block;
@@ -102,33 +134,35 @@ header{
     position: absolute;
     transition: 0.2s ease-in-out;
 }
-.header .hamburguer:before{
+.header-content .hamburguer:before{
     top: -10px;
 }
-.header .hamburguer:after{
+.header-content .hamburguer:after{
     bottom: -10px;
 }
-.header input{
+.header-content input{
     display: none;
 }
 
-.header input:checked ~ label .hamburguer{
+.header-content input:checked ~ label .hamburguer{
     transform: rotate(45deg);
 }
 
-.header input:checked ~label .hamburguer:before{
+.header-content input:checked ~label .hamburguer:before{
     transform: rotate(90deg);
     top: 0;
 }
 
-.header input:checked ~label .hamburguer:after{
+.header-content input:checked ~label .hamburguer:after{
     transform: rotate(90deg);
     bottom: 0;
 }
 
 
 /*! Conteudo principal */
-
+main{
+    padding-top: 100px;
+}
 .container-conteudo-principal{
     display: flex;
     gap: 10px;

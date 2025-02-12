@@ -268,10 +268,6 @@ main{
 }
 
 /*! Seção profissionais */
-.container-fluid{
-    background-color: #E1E8EC;
-    width: 100%;
-}
 .container-profissionais{
     display: flex;
     gap: 20px;
@@ -331,6 +327,27 @@ main{
 }
 
 /*! Seção Profissionais certificados */
+.banner-certificados{
+    background-image: url(../images/banner-section-principal.jpg);
+}
+.titulo-profissionais-certificados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-profissionais-certificados h2{
+    margin-bottom: 20px;
+    font-size: 45px;
+    font-weight: 500;
+    color: #e5e5e5;
+}
+.titulo-profissionais-certificados h3{
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #e5e5e5d8;
+    font-weight: 600;
+}
 .container-profissionais-certificados{
     display: flex;
     flex-direction: column;
@@ -340,25 +357,16 @@ main{
     padding-top: 70px;
     gap: 37px;
 }
-.container-profissionais-certificados h2{
-    font-size: 45px;
-    margin-bottom: 20px;
-    font-weight: 500;
-    color: #555;
-}
-.container-profissionais-certificados h3{
-    font-size: 24px;
-    margin-bottom: 40px;
-}
+
 
 .card-item{
     line-height: 150%;
     background-color: #D9963E;
     padding: 30px 0 25px;
     flex: 1;
-
     height: 530px;
     max-height: 100%;
+    margin-bottom: 30px;
 }
 .caixa-imagem-prof{
     display: flex;
@@ -384,4 +392,24 @@ main{
     display: flex;
     gap: 37px;
     width: 100%;
+}
+
+/*! Casa em ordem */
+.casa-em-ordem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.casa-em-ordem h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.casa-em-ordem h6{
+    font-size: 16.5px;
+    margin-bottom: 20px;
+    /* padding: 1px; */
 }

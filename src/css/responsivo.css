@@ -82,6 +82,26 @@
     .cards-container{
         flex-direction: column;
     }
+    .container-profissionais{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .conteudo-textos{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .botao-profissionais-container{
+        margin-bottom: 20px;
+    }
+    .container-cards-certificados{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 }
 

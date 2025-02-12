@@ -1,0 +1,234 @@
+/*! Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", serif;
+    /* font-family: "Poppins", serif; */
+}
+
+.header a{
+    text-decoration: none;
+    color: black;
+}
+
+.header ul{
+    list-style: none;
+}
+
+.header img{
+    max-width: 100%;
+}
+.container{
+    width: 1160px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/*! Cabeçalho */
+header{
+    padding: 10px;
+}
+.header-container{
+    width: 1160px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.header-container .logo{
+    width: 190px;
+    height: 60px;
+}
+.header-container .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.header nav ul{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.header nav ul li a{
+    font-size: 15px;
+    font-weight: 500;
+    /* padding: 10px 30px; */
+    border-radius: 50px;
+    transition: 0.4s;
+    color: #AB1736;
+}
+.header nav ul li a:hover{
+    color: #DAA9B0;
+}
+
+.header .menu{
+    display: none;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+}
+
+.header nav label{
+    display: flex;
+    flex-direction: column;
+}
+
+.header .hamburguer{
+    background-color: #000;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+}
+.header .hamburguer:before,
+.header .hamburguer:after{
+    background-color: #000;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+.header .hamburguer:before{
+    top: -10px;
+}
+.header .hamburguer:after{
+    bottom: -10px;
+}
+.header input{
+    display: none;
+}
+
+.header input:checked ~ label .hamburguer{
+    transform: rotate(45deg);
+}
+
+.header input:checked ~label .hamburguer:before{
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.header input:checked ~label .hamburguer:after{
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+
+/*! Conteudo principal */
+
+.container-conteudo-principal{
+    display: flex;
+    gap: 10px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.container-imagem-principal{
+    width: 50%;
+}
+.container-imagem-principal img{
+    width: 100%;
+}
+
+.conteudo-principal{
+    width: 50%;
+}
+.conteudo-principal h1{
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #272727;
+}
+
+.container-botao{
+    padding: 25px;
+    /* width: 50%; */
+    display: flex;
+}
+.container-botao a{
+    padding: 15px 20px;
+    background-color: #FFCB29;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.container-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    padding-top: 30px;
+    /* width: 50%; */
+    width: calc(50% - 5px);
+}
+.card h3{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.card p{
+    font-size: 15px;
+    line-height: 150%;
+}
+
+/*! Seção cartões imagens */
+.cards-container {
+    display: flex;
+    /* width: 1160px; */
+    gap: 37px;
+    padding: 5px;
+}
+
+.cartao {
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.cartao img {
+    /* width: 100%;
+    height: auto; */
+    width: 100%;
+    height: 243px; 
+    object-fit: contain; 
+}
+
+.card-content {
+    padding: 35px;
+}
+
+.cartao h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cartao p {
+    font-size: 15px;
+    color: #555;
+    padding-bottom: 19.5px;
+}
+.cartao li{
+    font-size: 15px;
+    color: #555;
+    padding-bottom: 19.5px;
+}
+
+/* @media(max-width: 540px){
+    .cards-container{
+        flex-direction: column;
+    }
+} */

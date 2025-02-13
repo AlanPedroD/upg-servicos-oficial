@@ -89,9 +89,6 @@ header {
     color: #FFCB29;
     font-weight: 500;
 }
-.logo-text span:last-child strong{
-    font-weight: 500;
-}
 nav ul {
     list-style: none;
     display: flex;
@@ -419,4 +416,70 @@ main{
 .casa-em-ordem h6{
     font-size: 16.5px;
     margin-bottom: 20px;
+}
+
+/*! Seção Clientes */
+.clientes{
+    background-color: #E1E8EC;
+    padding-top: 31px;
+    padding-bottom: 75px;
+}
+.clientes-titulo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.clientes-titulo-principal h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    color: #272727;
+}
+.clientes-titulo-principal h5{
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #272727;
+    font-weight: 400;
+}
+
+.card-clientes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.card-item-cliente h4{
+    font-size: 19.5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 500;
+    color: #272727;
+}
+.card-item-cliente p{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.card-item-cliente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F9F9;
+    box-shadow: 0 20px 25px 0 rgba(0, 0, 0, .18);
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 150%;
+}
+.container-estrelas{
+    margin-bottom: 20px;
+}
+
+.card-item-cliente i{
+    color: #FFCB29;
 }

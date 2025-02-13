@@ -49,9 +49,6 @@
     .conteudo-principal{
         width: 90%;
     }
-    /* .container-imagem-principal img{
-        content: url(../images/imagem-principal-03.jpg);
-    } */
 }
 
 @media(max-width: 540px){
@@ -109,6 +106,28 @@
     }
     .card-clientes{
         flex-direction: column;
+    }
+    .logo-e-copyright{
+        width: 100%;
+    }
+}
+
+@media(max-width: 430px){
+    .informacoes-adicionais-rodape{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media(max-width: 412px){
+    .logo-e-copyright{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-e-copyright .logo{
+        margin-bottom: 20px;
     }
 }
 

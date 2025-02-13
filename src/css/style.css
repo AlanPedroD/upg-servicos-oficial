@@ -85,9 +85,10 @@ header {
 }
 .logo-text span:last-child {
     font-size: 17px;
-    /* color: #D9963E; */
-    color: #FFCB29;
+    color: #f1ae56;
+    /* color: #272727; */
     font-weight: 500;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 nav ul {
     list-style: none;
@@ -330,7 +331,7 @@ main{
 
 /*! Seção Profissionais certificados */
 .banner-certificados{
-    background-image: url(../images/banner-section-principal.jpg);
+    background-image: url(../images/banner-02.jpg);
 }
 .titulo-profissionais-certificados{
     display: flex;
@@ -364,7 +365,7 @@ main{
 
 .card-item{
     line-height: 150%;
-    background-color: #D9963E;
+    background-color: #fff;
     padding: 30px 0 25px;
     flex: 1;
     height: 530px;
@@ -482,4 +483,99 @@ main{
 
 .card-item-cliente i{
     color: #FFCB29;
+}
+
+/*! Seção contato */
+.secao-contato{
+    background-color: #FFCB29;
+}
+.container-contato{
+    padding-top: 50px;
+}
+
+.contatos-e-endereco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.container-contato h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #000000ca;
+    text-align: center;
+}
+.container-contato h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.container-contato .cidade, .telefone-contato, .email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-contato strong{
+    font-weight: 600;
+}
+.botao-contato{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+.botao-contato a{
+    padding: 25px 30px;
+    color: #fff;
+    background-color: #272727;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/*! Rodapé */
+footer{
+    background-color: #272727;
+    padding: 54px 0 2em;
+}
+.container-rodape{
+    display: flex;
+    color: #F9F9F9;
+    flex-direction: column;
+}
+.logo-e-copyright{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 15px;
+    /* align-items: center; */
+}
+.informacoes-adicionais-rodape{
+    display: flex;
+    gap: 5px;
+}
+.informacoes-adicionais-rodape h4{
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+.informacoes-adicionais-rodape p{
+    font-size: 15px;
+    margin-bottom: 19.5px;
+}
+
+.horarios{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.item-texto-rodape{
+    flex: 1;
 }

@@ -107,5 +107,8 @@
     .container-profissionais-certificados h2{
         text-align: center;
     }
+    .card-clientes{
+        flex-direction: column;
+    }
 }
 

@@ -450,7 +450,7 @@ main{
 .card-clientes{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 20px;
 }
 .card-item-cliente h4{
@@ -469,13 +469,14 @@ main{
 .card-item-cliente{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #F9F9F9;
     box-shadow: 0 20px 25px 0 rgba(0, 0, 0, .18);
     padding-left: 20px;
     padding-right: 20px;
     line-height: 150%;
+    flex: 1;
 }
 .container-estrelas{
     margin-bottom: 20px;
@@ -578,4 +579,22 @@ footer{
 }
 .item-texto-rodape{
     flex: 1;
+}
+
+.container-redes-sociais{
+    display: flex;
+    padding: 20px;
+}
+.container-redes-sociais ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin: auto;
+    gap: 30px;
+}
+.container-redes-sociais ul li a i{
+    font-size: 40px;
+    color: #f1ae56;
 }

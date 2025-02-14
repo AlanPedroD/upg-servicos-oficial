@@ -354,8 +354,9 @@ main{
 .titulo-profissionais-certificados h2{
     margin-bottom: 20px;
     font-size: 45px;
-    font-weight: 500;
+    font-weight: 600;
     color: #C04908;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 .titulo-profissionais-certificados h3{
     font-size: 24px;

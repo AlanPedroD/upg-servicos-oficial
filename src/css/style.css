@@ -224,6 +224,7 @@ main{
 .card{
     padding-top: 20px;
     width: 50%;
+    max-width: 286px;
 }
 .card h3{
     margin-bottom: 5px;
@@ -240,7 +241,8 @@ main{
     gap: 37px;
     padding-bottom: 40px;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    align-items: stretch;
 }
 
 .cartao {
@@ -346,13 +348,10 @@ main{
 
 /*! Seção Profissionais certificados */
 .banner-certificados{
-    /* background-image: url(../images/banner-dispenser-gimp.jpeg); */
-
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-            url('../images/banner-dispenser-gimp.jpeg');
+            url('../images/banner-03.jpg');
     background-size: cover;
     background-position: center;
-
 }
 .titulo-profissionais-certificados{
     display: flex;

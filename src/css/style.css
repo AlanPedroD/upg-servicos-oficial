@@ -263,7 +263,7 @@ main{
 }
 
 .cartao h3 {
-    font-size: 24px;
+    font-size: 23px;
     margin-bottom: 20px;
 }
 
@@ -271,6 +271,7 @@ main{
     font-size: 15px;
     color: #555;
     padding-bottom: 19.5px;
+    line-height: 1.5;
 }
 .cartao ul{
     list-style-position: inside;

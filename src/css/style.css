@@ -205,6 +205,11 @@ main{
     font-weight: 600;
     text-transform: uppercase;
     font-size: 15px;
+    transition: .3s;
+}
+.container-botao a:hover{
+    /* background-color: #7b1b1b; */
+    color: #7b1b1b;
 }
 
 .container-cards{
@@ -332,7 +337,13 @@ main{
 
 /*! Seção Profissionais certificados */
 .banner-certificados{
-    background-image: url(../images/banner-02.jpg);
+    /* background-image: url(../images/banner-dispenser-gimp.jpeg); */
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url('../images/banner-dispenser-gimp.jpeg');
+    background-size: cover;
+    background-position: center;
+
 }
 .titulo-profissionais-certificados{
     display: flex;

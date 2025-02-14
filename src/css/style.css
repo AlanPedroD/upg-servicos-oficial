@@ -266,6 +266,9 @@ main{
     font-size: 23px;
     margin-bottom: 20px;
 }
+.fa-award{
+    color: #C04908;
+}
 
 .cartao p {
     font-size: 15px;

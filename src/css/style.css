@@ -49,7 +49,7 @@ header {
     height: 20px;
     color: #555;
 }
-.top-bar span {
+.top-bar h2 {
     margin-left: 5px;
     font-size: 14px;
     color: #555;
@@ -78,12 +78,12 @@ header {
     display: flex;
     flex-direction: column;
 }
-.logo-text span:first-child {
+.logo-text h2:first-child {
     font-size: 30px;
     font-weight: bold;
     color: #C04908;
 }
-.logo-text span:last-child {
+.logo-text h2:last-child {
     font-size: 17px;
     color: #f1ae56;
     font-weight: 500;
@@ -199,9 +199,10 @@ main{
 }
 .container-botao a{
     padding: 15px 20px;
-    background-color: #FFCB29;
+    /* background-color: #FFCB29; */
+    background-color: #7b1b1b;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 15px;
@@ -213,8 +214,7 @@ main{
     /* background-color: #f1f1f1; */
     /* background-color: #272727; */
     /* background-color: #F56620; */
-    background-color: #7b1b1b;
-    color: #e5e5e5;
+    background-color: #ee4a4a;
 }
 
 .container-cards{
@@ -411,6 +411,11 @@ main{
 .card-item p{
     font-size: 15px;
     margin-bottom: 19.5px;
+}
+.card-item img{
+    width: 100%;
+    height: 243px; 
+    object-fit: contain; 
 }
 
 .container-cards-certificados{

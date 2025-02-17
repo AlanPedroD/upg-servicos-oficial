@@ -199,7 +199,6 @@ main{
 }
 .container-botao a{
     padding: 15px 20px;
-    /* background-color: #FFCB29; */
     background-color: #7b1b1b;
     text-decoration: none;
     color: #fff;
@@ -211,9 +210,6 @@ main{
     border: 1px solid transparent;
 }
 .container-botao a:hover{
-    /* background-color: #f1f1f1; */
-    /* background-color: #272727; */
-    /* background-color: #F56620; */
     background-color: #ee4a4a;
 }
 
@@ -240,7 +236,7 @@ main{
     display: flex;
     gap: 37px;
     padding-bottom: 40px;
-    justify-content: center;
+    justify-content: center; 
     /* align-items: center; */
     align-items: stretch;
 }
@@ -254,7 +250,7 @@ main{
     max-height: 100%;
 }
 
-.cartao img {
+.cartao img {  
     width: 100%;
     height: 243px; 
     object-fit: contain; 
@@ -346,13 +342,18 @@ main{
     text-align: center;
 }
 
-/*! Seção Profissionais certificados */
-.banner-certificados{
+/*! Seção serviços */
+/* .banner-certificados{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
             url('../images/banner-03.jpg');
     background-size: cover;
     background-position: center;
+} */
+
+.banner-certificados {
+    background: linear-gradient(to bottom, #101218 75%, #E1E8EC 25%);
 }
+
 .titulo-profissionais-certificados{
     display: flex;
     flex-direction: column;
@@ -366,12 +367,12 @@ main{
     color: #C04908;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-.titulo-profissionais-certificados h3{
-    font-size: 24px;
-    margin-bottom: 40px;
-    color: #f1ae56;
-    font-weight: 600;
+.underline{
+    width: 190px;
+    height: 5px;
+    background-color: #f1ae56;
 }
+
 .container-profissionais-certificados{
     display: flex;
     flex-direction: column;
@@ -379,19 +380,25 @@ main{
     align-items: center;
     /* margin-bottom: 30px; */
     padding-top: 70px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     gap: 37px;
 }
 
+
+.container-cards-certificados{
+    display: flex;
+    gap: 37px;
+    width: 100%;
+    align-items: stretch;
+}
 
 .card-item{
     line-height: 150%;
     background-color: #fff;
     padding: 30px 0 25px;
     flex: 1;
-    height: 530px;
     max-height: 100%;
-    margin-bottom: 30px;
+    box-shadow: 0 20px 25px 0 rgba(0, 0, 0, .18);
 }
 .caixa-imagem-prof{
     display: flex;
@@ -416,33 +423,6 @@ main{
     width: 100%;
     height: 243px; 
     object-fit: contain; 
-}
-
-.container-cards-certificados{
-    display: flex;
-    gap: 37px;
-    width: 100%;
-}
-
-/*! Casa em ordem */
-.casa-em-ordem{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* margin-bottom: 40px; */
-    text-align: center;
-    background-color: #F9F9F9;
-    padding-top: 90px;
-    padding-bottom: 70px;
-}
-.casa-em-ordem h2{
-    font-size: 45px;
-    margin-bottom: 20px;
-}
-.casa-em-ordem h6{
-    font-size: 16.5px;
-    margin-bottom: 20px;
 }
 
 /*! Seção Clientes */
@@ -512,9 +492,64 @@ main{
     color: #FFCB29;
 }
 
+/*! Dicas */
+.dicas{
+    padding: 50px 0 80px;
+    background-color: #101218;
+}
+
+.dicas-titulo-principal{
+    display: flex;
+    justify-content: center;
+}
+.dicas-titulo-principal h2{
+    margin-bottom: 40px;
+    font-size: 24px;
+    color: #F4F8F7;
+}
+.dicas-titulo-principal i{
+    color: maroon;
+}
+
+.container-dicas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; /* Espaçamento entre as dicas */
+}
+
+
+.dica-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 10px; /* Espaço entre o título e o parágrafo */
+    flex-wrap: wrap;
+    background: #f8f8f8;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dica-item h4 {
+    font-size: 14px;
+    max-width: 100%;
+    font-weight: 500;
+    min-height: 40px;
+}
+.dica-item h4 i{
+    color: lightsalmon;
+}
+
+.dica-item p {
+    flex: 1; /* Faz o parágrafo ocupar o espaço restante */
+    line-height: 1.5;
+}
+
+
 /*! Seção contato */
 .secao-contato{
     background-color: #FFCB29;
+    background-color: #0C3C60;
+    color: #E1E8EC;
 }
 .container-contato{
     padding-top: 50px;
@@ -532,6 +567,7 @@ main{
     margin-bottom: 20px;
     font-weight: 600;
     color: #000000ca;
+    color: #E1E8EC;
     text-align: center;
 }
 .container-contato h3{
@@ -601,7 +637,6 @@ footer{
 .horarios{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 .item-texto-rodape{
     flex: 1;

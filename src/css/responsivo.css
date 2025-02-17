@@ -34,6 +34,9 @@
     .card p{
         font-size: 12px;
     }
+    .cartao {
+        height: auto;
+    }
 }
 
 @media(max-width: 768px){
@@ -48,6 +51,9 @@
     }
     .conteudo-principal{
         width: 90%;
+    }
+    .container-dicas {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr)); 
     }
 }
 
@@ -81,7 +87,10 @@
 
     .cards-container{
         flex-direction: column;
+        max-width: 90%;
+        margin: auto;
     }
+    
     .container-profissionais{
         flex-direction: column;
         justify-content: center;
@@ -99,7 +108,7 @@
     .container-cards-certificados{
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        width: 90%;
     }
     .container-profissionais-certificados h2{
         text-align: center;

@@ -30,24 +30,23 @@ header {
     left: 0;
     width: 100%;
     background: white;
-    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    background-color: #6B0F2C;
     z-index: 50;
-
-    /* box-shadow: 0px 4px 8px rgba(25, 55, 109, 0.3); 
-    border-radius: 10px; */
-
-    /* box-shadow: 0px 4px 8px rgba(184, 134, 11, 0.3); 
-    border-radius: 10px; */
-
-    box-shadow: 0px 4px 8px rgba(75, 0, 130, 0.3); /* Roxo profundo */
-    /* border-radius: 10px; */
+    box-shadow: 0px 4px 8px rgba(75, 0, 130, 0.3); 
+   
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 4px 8px rgba(25, 55, 109, 0.3); 
+    box-shadow: 0px 4px 8px rgba(184, 134, 11, 0.3);  */
 }
 .top-bar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
-    background: #e5e5e5;
+    color: #fff;
+    /* background-color: #394457; */
+    /* background-color: #10002E; */
+    background-color: #242329;
 }
 .top-bar div {
     display: flex;
@@ -106,7 +105,7 @@ nav ul {
 }
 nav a {
     text-decoration: none;
-    color: #555;
+    color: #e1e8ecbe;
     transition: color 0.3s;
 }
 nav .select{

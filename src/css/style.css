@@ -110,6 +110,7 @@ nav a {
 }
 nav .select{
     color: #9D2042;
+    font-weight: 500;
 }
 nav a:hover {
     color: #9D2042;
